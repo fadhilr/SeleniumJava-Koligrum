@@ -4,6 +4,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
+import java.util.concurrent.TimeUnit;
+
 public class Webdriverinitializer {
     public static ChromeDriver driver;
 
@@ -18,6 +20,7 @@ public class Webdriverinitializer {
         //setting
         driver = new ChromeDriver(options);
 //    driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
     }
 
     public static void quit(){

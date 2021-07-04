@@ -1,0 +1,141 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-07-04T05:13:19.517Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5555000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.WebdriverHook.inisialiasiWebdriver()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Add Quote with background color yellow",
+        "description": "",
+        "id": "add-quote;add-quote-with-background-color-yellow",
+        "after": [
+          {
+            "result": {
+              "duration": 2026000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.WebdriverHook.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3303000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User open atlas web playground page",
+            "match": {
+              "location": "steps.WebPalay.userOpenAtlasWebPlaygroundPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 372000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User input quote \"There is a will there is a way\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"There is a will there is a way\"",
+                  "offset": 17
+                }
+              ],
+              "location": "steps.WebPalay.userInputQuote(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 524000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User select color \"Yellow\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Yellow\"",
+                  "offset": 18
+                }
+              ],
+              "location": "steps.WebPalay.userSelectColor(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 211000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User click button add quote",
+            "match": {
+              "location": "steps.WebPalay.userClickButtonAddQuote()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 117000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User see quote \"There is a will there is a way\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"There is a will there is a way\"",
+                  "offset": 15
+                }
+              ],
+              "location": "steps.GridView.userSeeQuote(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddQuote"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Add Quote",
+    "description": "",
+    "id": "add-quote",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/AddQuote.feature",
+    "tags": [
+      {
+        "name": "@AddQuote",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

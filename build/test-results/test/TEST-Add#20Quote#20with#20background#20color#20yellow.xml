@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Add Quote with background color yellow" tests="6" skipped="0" failures="0" errors="0" timestamp="2021-07-04T05:13:25" hostname="DESKTOP-8C57539" time="6.58">
+  <properties/>
+  <testcase name="User open atlas web playground page" classname="Add Quote with background color yellow" time="3.307"/>
+  <testcase name="User input quote &quot;There is a will there is a way&quot;" classname="Add Quote with background color yellow" time="0.373"/>
+  <testcase name="User select color &quot;Yellow&quot;" classname="Add Quote with background color yellow" time="0.523"/>
+  <testcase name="User click button add quote" classname="Add Quote with background color yellow" time="0.211"/>
+  <testcase name="User see quote &quot;There is a will there is a way&quot;" classname="Add Quote with background color yellow" time="0.117"/>
+  <testcase name="classMethod" classname="Add Quote with background color yellow" time="12.711"/>
+  <system-out><![CDATA[
+@AddQuote @smoke
+Scenario: Add Quote with background color yellow         ?[90m# src/test/resources/features/AddQuote.feature:4?[0m
+]]></system-out>
+  <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 38610
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jul 04, 2021 12:13:25 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>

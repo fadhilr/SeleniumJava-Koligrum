@@ -1,18 +1,13 @@
 //import com.sun.xml.internal.ws.wsdl.writer.document.StartWithExtensionsType;
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.support.ui.Select;
 import pages.GridViewPage;
+import pages.TableViewPage;
 import pages.WebPlaygroundHomePage;
 import webdriverpool.Webdriverinitializer;
-
-import java.util.List;
 //TDD test driven development/unit testing
 public class TestRunPageObject {
 
@@ -65,4 +60,39 @@ public class TestRunPageObject {
 
   }
 
+  @Test
+  public void hoverShowTableButton(){
+    WebPlaygroundHomePage homePage = new WebPlaygroundHomePage(Webdriverinitializer.driver);
+    TableViewPage tableViewPage = new TableViewPage(Webdriverinitializer.driver);
+
+    homePage.openPage();
+    tableViewPage.tableView();
+    tableViewPage.hoverShowTable();
+    boolean result = tableViewPage.isTableShown();
+    Assert.assertTrue(result);
+  }
+
+  @Test
+  public void clickButtonShowAfterTen(){
+    WebPlaygroundHomePage homePage = new WebPlaygroundHomePage(Webdriverinitializer.driver);
+    TableViewPage tableViewPage = new TableViewPage(Webdriverinitializer.driver);
+
+    homePage.openPage();
+    tableViewPage.tableView();
+    tableViewPage.clickButtonShowTableAfterTen();
+    boolean result = tableViewPage.isTableShown();
+    Assert.assertTrue(result);
+  }
+
+  @Test
+  public void switchTab(){
+    WebPlaygroundHomePage homePage = new WebPlaygroundHomePage(Webdriverinitializer.driver);
+
+
+    homePage.openPage();
+    homePage.clickPoweredBy();
+    String title = homePage.getAtlasTitle();
+    System.out.println(title);
+    Assert.assertEquals("Atlas ID – Automatin Testing Learning and Sharing Indonesia", title);
+  }
 }
